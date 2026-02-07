@@ -1,14 +1,14 @@
-
+import { useState } from "react";
 import { TileGrid } from "@repo/ui/TileGrid";
 import { Button } from "@repo/ui/button";
 import styles from "./page.module.css";
 const App = () => {
   const [tilesA, setTilesA] = useState([
-    { title: "A1", image: "", description: "" },
+    { title: "A1", image: "globe.svg", description: "" },
   ]);
 
   const [tilesB, setTilesB] = useState([
-    { title: "B1", image: "", description: "" },
+    { title: "B1", image: "next.svg", description: "" },
   ]);
 
   return (
@@ -21,3 +21,5 @@ const App = () => {
     </>
   );
 };
+
+export default App;

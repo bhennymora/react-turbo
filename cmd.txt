@@ -1,0 +1,16 @@
+npx create-turbo@latest my-turbo
+cd my-turbo
+cd apps
+pnpm create vite web --template react-ts
+pnpm dev <-run it
+
+
+----------
+one liner:
+pnpm run turbo dev
+ ERR_PNPM_NO_SCRIPT  Missing script: turbo
+
+
+-----add new app---
+pnpm create vite appname --template react-ts
+pnpm install
